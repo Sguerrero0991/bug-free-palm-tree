@@ -10,7 +10,7 @@ RSpec.describe Shelter do
       expect(shelter).to be_a(Shelter)
     end
 
-    xit 'can read the name' do
+    it 'can read the name' do
       shelter = Shelter.new('Denver Animal Shelter', 5)
       expect(shelter.name).to eq('Denver Animal Shelter')
     end
