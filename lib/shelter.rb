@@ -21,4 +21,5 @@ class Shelter
     @pets.count > 3
   end
 
+  
 end
