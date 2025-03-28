@@ -1,3 +1,4 @@
+require 'pry'
 class Shelter
   attr_reader :name, :capacity, :pets
   def initialize(name, capacity)
@@ -6,7 +7,14 @@ class Shelter
     @pets = []
   end
 
-  def add_pet(pet)
-    @pets << pet
+  def add_pet(name)
+    @pets << name
   end 
+
+  def call_pets
+    @pets.map do |pet|
+     "#{pet}!" 
+    end 
+  end
+
 end

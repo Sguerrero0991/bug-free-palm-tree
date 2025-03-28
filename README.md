@@ -25,7 +25,7 @@ pry(main)> shelter.name
 pry(main)> shelter.capacity
 => 3
 
-pry(main)> shelter.pets
+pry(main)>  
 => []
 ```
 
