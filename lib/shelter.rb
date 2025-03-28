@@ -17,4 +17,8 @@ class Shelter
     end 
   end
 
+  def over_capacity?
+    @pets.count > 3
+  end
+
 end
