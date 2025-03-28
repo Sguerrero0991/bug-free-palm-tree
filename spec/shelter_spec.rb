@@ -20,7 +20,7 @@ RSpec.describe Shelter do
       expect(shelter.capacity).to eq(5)
     end
 
-    xit 'has no pets by default' do
+    it 'has no pets by default' do
       shelter = Shelter.new('Denver Animal Shelter', 5)
       expect(shelter.pets).to eq []
     end
