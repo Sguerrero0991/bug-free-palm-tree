@@ -54,16 +54,24 @@ RSpec.describe Shelter do
   describe '#over_capacity?' do
     it 'will check if shelter is over capacity after pets are added' do
       shelter = Shelter.new('Denver Animal Shelter', 3)
+      shelter2 = Shelter.new('Chicago Animal Shelter', 0)
 
       shelter.add_pet('Salem')
       shelter.add_pet('Beethoven')
 
+      shelter2.add_pet('BoBo')
+      shelter2.add_pet('Zero')
+
       expect(shelter.over_capacity?).to eq(false)
+      expect(shelter2.over_capacity?).to eq(true)
 
       shelter.add_pet('Spot')
       shelter.add_pet('Jonesy')
 
+      shelter2.add_pet('Benji')
+
       expect(shelter.over_capacity?).to eq(true)
+      expect(shelter2.over_capacity?).to eq(true)
     end 
   end 
 
