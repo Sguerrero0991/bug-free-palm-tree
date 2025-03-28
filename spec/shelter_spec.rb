@@ -28,7 +28,7 @@ RSpec.describe Shelter do
 
   # Iteration 2
   describe '#add_pet' do
-    xit 'returns a list of pets' do
+    it 'returns a list of pets' do
       shelter = Shelter.new('Denver Animal Shelter', 5)
       shelter.add_pet('Salem')
       shelter.add_pet('Beethoven')
