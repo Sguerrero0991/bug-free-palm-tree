@@ -5,7 +5,7 @@ RSpec.describe Shelter do
 
   # Iteration 1
   describe '#initialize' do
-    xit 'is a Shelter' do
+    it 'is a Shelter' do
       shelter = Shelter.new('Denver Animal Shelter', 5)
       expect(shelter).to be_a(Shelter)
     end
